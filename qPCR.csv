@@ -1,4 +1,4 @@
-Prosess,Vokabular,Tabell,Term,Eksempel,"Forklaring (From https://dwc.tdwg.org/terms/, https://press3.mcs.anl.gov/gensc/mixs/, http://clinchem.aaccjnls.org/content/55/4/611.long or wikipedia)"
+Prosess,Vokabular,Class,Term,Example,"Explanation (From https://dwc.tdwg.org/terms/, https://press3.mcs.anl.gov/gensc/mixs/, http://clinchem.aaccjnls.org/content/55/4/611.long or wikipedia)"
 Sampling,DwC,Location,locationID,62c71e64-f76c-4572-b77d-964c1ad330da,An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.
 Sampling,DwC,Location,verbatimLocality,FAGER_19_004,The original textual description of the place.
 Sampling,DwC,Location,waterBody,Fagerlitjernbekken,The name of the water body in which the Location occurs.
@@ -19,10 +19,10 @@ Extraction,DwC,MaterialSample,materialSampleID,FAGER_19_004,"An identifier for t
 Extraction,DwC,Occurrence,preparations,DNA extract,A list (concatenated and separated) of preparations and preservation methods for a specimen.
 Extraction,MIxS,MIxS,nucl_acid_ext,{PMID|DOI|URL} of written protocol,"Link to a literature reference, electronic resource or a standard operating procedure (SOP) of the nucleic acid extraction. In the case of RNA extraction, should include reverse transcripiton, RNA integrity and inhibition testing information."
 Extraction,MIxS,MIxS,preparationDate,2019-09-10,"The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Recommended best practice is to use a date that conforms to ISO 8601:2004(E)."
-Extraction,GGBN Material Sample Extension,,concentration,67.5,Concentration of DNA (weight ng/volume µl) 
-Extraction,GGBN Material Sample Extension,,concentrationUnit,ng/µl,Unit used for concentration measurement
-Extraction,GGBN Material Sample Extension,,methodDeterminationConcentrationAndRatios,Nanodrop,Description of method used for concentration measurement
-Extraction,GGBN Material Sample Extension,,ratioOfAbsorbance260_280, 1.91,"Ratio of absorbance at 260 nm and 280 nm assessing DNA purity (mostly secondary measure, indicates mainly EDTA, carbohydrates, phenol), (DNA samples only). "
+Extraction,GGBN Material Sample Extension,GGBN,concentration,67.5,Concentration of DNA (weight ng/volume µl) 
+Extraction,GGBN Material Sample Extension,GGBN,concentrationUnit,ng/µl,Unit used for concentration measurement
+Extraction,GGBN Material Sample Extension,GGBN,methodDeterminationConcentrationAndRatios,Nanodrop,Description of method used for concentration measurement
+Extraction,GGBN Material Sample Extension,GGBN,ratioOfAbsorbance260_280, 1.91,"Ratio of absorbance at 260 nm and 280 nm assessing DNA purity (mostly secondary measure, indicates mainly EDTA, carbohydrates, phenol), (DNA samples only). "
 Extraction,MIQE,,contaminationAssessment,no,Wether DNA or RNA contamination assessment was done or not.
 Amplification,MIxS,MIxS,target_gene,COI,Targeted gene or locus name for marker gene studies.
 Amplification,MIxS,MIxS,pcr_primers,FWD:TTGTTGATTCGTGCTGAGTTAGG REV:GCATGAGCCGTAACAATAACATTG,"PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters."

@@ -1,4 +1,4 @@
-Prosess,Vokabular,Tabell,Term,Eksempel,"Forklaring (From https://dwc.tdwg.org/terms/, https://press3.mcs.anl.gov/gensc/mixs/, http://clinchem.aaccjnls.org/content/55/4/611.long, http://clinchem.aaccjnls.org/content/59/6/892 or wikipedia)"
+Prosess,Vokabular,Class,Term,Eksempel,"Forklaring (From https://dwc.tdwg.org/terms/, https://press3.mcs.anl.gov/gensc/mixs/, http://clinchem.aaccjnls.org/content/55/4/611.long, http://clinchem.aaccjnls.org/content/59/6/892 or wikipedia)"
 Sampling,DwC,Location,locationID,,
 Sampling,DwC,Location,verbatimLocality,,
 Sampling,DwC,Location,waterBody,,
@@ -19,8 +19,8 @@ Extraction,DwC,MaterialSample,materialSampleID,,
 Extraction,DwC,Occurrence,preparations,,
 Extraction,MIxS,MIxS,nucl_acid_ext,,
 Extraction,MIxS,MIxS,preparationDate,,
-Extraction,GGBN Material Sample Extension,,concentration,,
-Extraction,GGBN Material Sample Extension,,concentrationUnit,,
-Extraction,GGBN Material Sample Extension,,methodDeterminationConcentrationAndRatios,,
-Extraction,GGBN Material Sample Extension,,ratioOfAbsorbance260_280,,
+Extraction,GGBN Material Sample Extension,GGBN,concentration,,
+Extraction,GGBN Material Sample Extension,GGBN,concentrationUnit,,
+Extraction,GGBN Material Sample Extension,GGBN,methodDeterminationConcentrationAndRatios,,
+Extraction,GGBN Material Sample Extension,GGBN,ratioOfAbsorbance260_280,,
 ,dMIQE,,,,
