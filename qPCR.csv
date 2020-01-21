@@ -1,0 +1,55 @@
+Prosess,Vokabular,Tabell,Term,Eksempel,"Forklaring (From https://dwc.tdwg.org/terms/, https://press3.mcs.anl.gov/gensc/mixs/, http://clinchem.aaccjnls.org/content/55/4/611.long or wikipedia)"
+Sampling,DwC,Location,locationID,62c71e64-f76c-4572-b77d-964c1ad330da,An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.
+Sampling,DwC,Location,verbatimLocality,FAGER_19_004,The original textual description of the place.
+Sampling,DwC,Location,waterBody,Fagerlitjernbekken,The name of the water body in which the Location occurs.
+Sampling,DwC,MoF,waterBodyID,NVE:VatnLnr:37393,"Code for the waterbody, for example from vann-nett.no"
+Sampling,DwC,Location,decimalLatitude,63.394837,"The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive."
+Sampling,DwC,Location,decimalLongitude,10.322477,"The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive."
+Sampling,DwC,Location,geodeticDatum,EPSG:4326,"The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based. Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value unknown."
+Sampling,DwC,Event,habitat,lotic,A category or description of the habitat in which the Event occurred.
+Sampling,DwC,Event,eventID,bb5c8b0d-4eb1-43ec-9c9d-e6e79e04bd32,An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+Sampling,DwC,Event,eventDate,2019-08-26,"The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use a date that conforms to ISO 8601:2004(E)."
+Sampling,DwC,Event,eventTime,15:00+0100,The time or interval during which an Event occurred. Recommended best practice is to use a time that conforms to ISO 8601:2004(E). (Example is 10:00AM in the time zone one hour later than UTC).
+Sampling,DwC,Event,sampleSizeValue,10,"A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling event. A sampleSizeValue must have a corresponding sampleSizeUnit. "
+Sampling,DwC,Event,sampleSizeUnit,l ,"The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event. A sampleSizeUnit must have a corresponding sampleSizeValue."
+Sampling,DwC,Event,samplingProtocol,"2 µm Merck Glassfiber, pumped 15 min, filter stored in buffer ATL (QIAGEN) at 20°C","The name of, reference to, or description of the method or protocol used during an Event."
+Extraction,DwC,Event,eventID,0fbc87f8-7b75-486f-bc57-fd19c2bfab0e,An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+Extraction,DwC,Event,parentEventID,bb5c8b0d-4eb1-43ec-9c9d-e6e79e04bd32,An identifier for the broader Event that groups this and potentially other Events.
+Extraction,DwC,MaterialSample,materialSampleID,FAGER_19_004,"An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique."
+Extraction,DwC,Occurrence,preparations,DNA extract,A list (concatenated and separated) of preparations and preservation methods for a specimen.
+Extraction,MIxS,MIxS,nucl_acid_ext,{PMID|DOI|URL} of written protocol,"Link to a literature reference, electronic resource or a standard operating procedure (SOP) of the nucleic acid extraction. In the case of RNA extraction, should include reverse transcripiton, RNA integrity and inhibition testing information."
+Extraction,MIxS,MIxS,preparationDate,2019-09-10,"The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Recommended best practice is to use a date that conforms to ISO 8601:2004(E)."
+Extraction,GGBN Material Sample Extension,,concentration,67.5,Concentration of DNA (weight ng/volume µl) 
+Extraction,GGBN Material Sample Extension,,concentrationUnit,ng/µl,Unit used for concentration measurement
+Extraction,GGBN Material Sample Extension,,methodDeterminationConcentrationAndRatios,Nanodrop,Description of method used for concentration measurement
+Extraction,GGBN Material Sample Extension,,ratioOfAbsorbance260_280, 1.91,"Ratio of absorbance at 260 nm and 280 nm assessing DNA purity (mostly secondary measure, indicates mainly EDTA, carbohydrates, phenol), (DNA samples only). "
+Extraction,MIQE,,contaminationAssessment,no,Wether DNA or RNA contamination assessment was done or not.
+Amplification,MIxS,MIxS,target_gene,COI,Targeted gene or locus name for marker gene studies.
+Amplification,MIxS,MIxS,pcr_primers,FWD:TTGTTGATTCGTGCTGAGTTAGG REV:GCATGAGCCGTAACAATAACATTG,"PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters."
+Amplification,MIQE,,probeSequence,CCTGGTTCTTTGCTGGGT,probe is used to detect the presence of a specific DNA fragment in the mixture through the hybridization with a double-stranded DNA
+Amplification,MIQE,,probeName,MarMa_COI_FAM,Name of probe used for this amplification
+Amplification,MIQE,,probeReferenceCitation,"Carlsson, JEL, Egan, D, Collins, PC, Farrell, ED, Igoe, F, Carlsson, J. A qPCR MGB probe based eDNA assay for European freshwater pearl mussel (Margaritifera margaritifera L.). Aquatic Conserv: Mar Freshw Ecosyst. 2017; 27: 1341– 1344. ",Reference of the probe.
+Amplification,MIQE,,probeReferenceLink,https://doi.org/10.1002/aqc.2788,Link to the reference of the probe.
+Amplification,MIQE,,probeReporter,FAM,"Type of fluorophore (reporter) used. Probe anneals within amplified target DNA. Polymerase activity degrades the probe that has annealed to the template, and the probe releases the fluorophore from it and breaks the proximity to the quencher, thus allowing fluorescence of the fluorophore."
+Amplification,MIQE,,probeQuencher,NFQ-MGB,"Type of quencher used. The quencher molecule quenches the fluorescence emitted by the fluorophore when excited by the cycler’s light source As long as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence signals."
+Amplification,MIQE,,ampliconSize,83,The length of the amplicon in basepairs.
+Amplification,MIxS,MIxS,pcr_cond,initial denaturation:94degC_5min; denaturation:94degC_40s; annealing:50degC_1min; elongation:72degC_20s; final elongation:72degC_2min; total 25 and 30 cycles,Description of reaction conditions and components for PCR in the form of  'initial denaturation:94degC_1.5min; annealing:...'.
+Amplification,MIxS,MIxS,nucl_acid_amp, {PMID|DOI|URL} of written protocol of amplification and purification,"Link to a literature reference, electronic resource or a standard operating procedure (SOP) of the amplification reactions."
+Amplification,MIQE,,amplificationInstrument,Applied Biosystems Step One Plus Real-Time PCR System,Name of the qPCR instrument used.
+Amplification,MIQE,,thresholdQuantificationCycle,0.3,Threshold for change in fluoresence signal between cycles
+Amplification,MIQE,,baselineValue,15,The number of cycles when fluorescence signal from the target amplification is below background fluorescence not originated from the real target amplification.
+Amplification,MIQE,,quantificationCycle,37.9450950622558,"The number of cycles required for the fluorescent signal to cross a given value threshold above the baseline. Quantification cycle (Cq), threshold cycle (Ct), crossing point (Cp), and take-off point (TOP) refer to the same value from the real-time instrument. Use of quantification cycle (Cq), is preferable according to the RDML (Real-Time PCR Data Markup Language) data standard (http://www.rdml.org). "
+Amplification,MIQE,,targetQuantity,0.0000400574572267942,Quantity of the target DNA in the sample.
+Amplification,MIQE,,targetQuantityUnit,ng/µl,Unit used for quantity measurement.
+Amplification,MIQE,,automaticThresholdQuantificationCycle,no,Whether threshold was set by intstrument or by manually.
+Amplification,MIQE,,automaticBaselineValue,no,Whether baseline value was set by instrument or by manually.
+Target,DwC,Taxon,kingdom,Metazoa,The full scientific name of the kingdom in which the taxon is classified.
+Target,DwC,Taxon,phylum,Mollusca,The full scientific name of the phylum or division in which the taxon is classified.
+Target,DwC,Taxon,class,Bivalvia,The full scientific name of the class in which the taxon is classified.
+Target,DwC,Taxon,order,Unionoida,The full scientific name of the order in which the taxon is classified.
+Target,DwC,Taxon,family,Margaritiferidae,The full scientific name of the family in which the taxon is classified.
+Target,DwC,Taxon,genus,Margaritifera,The full scientific name of the genus in which the taxon is classified.
+Target,DwC,Taxon,specificEpithet,margaritifera,The name of the first or species epithet of the scientificName.
+Target,DwC,Taxon,scientificName,Margaritifera margaritifera,"The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term."
+Target,DwC,Taxon,taxonRank,species,The taxonomic rank of the most specific name in the scientificName.
+Occurrence,DwC,Occurrence,occurrenceStatus,present,"A statement about the presence or absence of a Taxon at a Location. Recommended best practice is to use a controlled vocabulary (present, absent)."
