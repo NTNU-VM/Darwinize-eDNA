@@ -1,0 +1,57 @@
+Prosess	Vokabular	Tabell	Term	Eksempel	Forklaring (From https://dwc.tdwg.org/terms/, https://press3.mcs.anl.gov/gensc/mixs/, http://clinchem.aaccjnls.org/content/55/4/611.long, http://clinchem.aaccjnls.org/content/59/6/892 or wikipedia)
+Sampling	DwC	Location	locationID	62c71e64-f76c-4572-b77d-964c1ad330da	An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.
+Sampling	DwC	Location	verbatimLocality	Bjørnsjøen	The original textual description of the place.
+Sampling	DwC	Location	waterBody	Bjørnsjøen	The name of the water body in which the Location occurs.
+Sampling	DwC	MoF	waterBodyID	NVE:VatnLnr:37393	Code for the waterbody, for example from vann-nett.no
+Sampling	DwC	Location	decimalLatitude	63.394837	The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
+Sampling	DwC	Location	decimalLongitude	10.322477	The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.
+Sampling	DwC	Location	geodeticDatum	EPSG:4326	The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based. Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value unknown.
+Sampling	DwC	Event	habitat	lentic	A category or description of the habitat in which the Event occurred.
+Sampling	DwC	Event	eventID	680eb019-6bf1-4afa-bc09-f7775f0a084e	An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+Sampling	DwC	Event	eventDate	1963-11-17	The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use a date that conforms to ISO 8601:2004(E).
+Sampling	DwC	Event	eventTime	NA	The time or interval during which an Event occurred. Recommended best practice is to use a time that conforms to ISO 8601:2004(E). (Example is 10:00AM in the time zone one hour later than UTC).
+Sampling	DwC	Organism	organismID	680eb019-6bf1-4afa-bc09-f7775f0a084e	An identifier for the Organism instance (as opposed to a particular digital record of the Organism). May be a globally unique identifier or an identifier specific to the data set.
+Sampling	DwC	Organism	organismName	rainbow trout	A textual name or label assigned to an Organism instance.
+Sampling	DwC	Event	sampleSizeValue	15	A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling event. A sampleSizeValue must have a corresponding sampleSizeUnit. 
+Sampling	DwC	Event	sampleSizeUnit	ng	The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event. A sampleSizeUnit must have a corresponding sampleSizeValue.
+Sampling	DwC	Event	samplingProtocol	A piece of tissue	The name of, reference to, or description of the method or protocol used during an Event.
+Extraction	DwC	Event	eventID	680eb019-6bf1-4afa-bc09-f7775f0a084e	An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+Extraction	DwC	Event	parentEventID	62c71e64-f76c-4572-b77d-964c1ad330da	An identifier for the broader Event that groups this and potentially other Events.
+Extraction	DwC	MaterialSample	materialSampleID	Regnbue_63_Kontroll1	An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique.
+Extraction	DwC	Occurrence	preparations	DNA extract	A list (concatenated and separated) of preparations and preservation methods for a specimen.
+Extraction	MIxS	MIxS	nucl_acid_ext	Qiagen Blood and Tissue - 16.11.18	Link to a literature reference, electronic resource or a standard operating procedure (SOP) of the nucleic acid extraction. In the case of RNA extraction, should include reverse transcripiton, RNA integrity and inhibition testing information.
+Extraction	MIxS	MIxS	preparationDate	2018-11-16	The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Recommended best practice is to use a date that conforms to ISO 8601:2004(E).
+Extraction	GGBN Material Sample Extension		concentration	 6.8	Concentration of DNA (weight ng/volume µl) 
+Extraction	GGBN Material Sample Extension		concentrationUnit	ng/µl	Unit used for concentration measurement
+Extraction	GGBN Material Sample Extension		methodDeterminationConcentrationAndRatios	Nanodrop	Description of method used for concentration measurement
+Extraction	GGBN Material Sample Extension		ratioOfAbsorbance260_280	 1.71	Ratio of absorbance at 260 nm and 280 nm assessing DNA purity (mostly secondary measure, indicates mainly EDTA, carbohydrates, phenol), (DNA samples only). 
+Extraction	MIQE		contaminationAssessment	no	Wether DNA or RNA contamination assessment was done or not.
+Amplification	MIxS	MIxS	target_gene	CTRL	Targeted gene or locus name for marker gene studies.
+Amplification	MIxS	MIxS	pcr_primers	FWD:TTGTTGATTCGTGCTGAGTTAGG REV:GCATGAGCCGTAACAATAACATTG	PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters.
+Amplification	MIQE		probeSequence	CCTGGTTCTTTGCTGGGT	probe is used to detect the presence of a specific DNA fragment in the mixture through the hybridization with a double-stranded DNA
+Amplification	MIQE		probeName	NINASalmoCTRL_P	Name of probe used for this amplification
+Amplification	MIQE		probeReporter	FAM	Type of fluorophore (reporter) used. Probe anneals within amplified target DNA. Polymerase activity degrades the probe that has annealed to the template, and the probe releases the fluorophore from it and breaks the proximity to the quencher, thus allowing fluorescence of the fluorophore.
+Amplification	MIQE		probeQuencher	NFQ-MGB	Type of quencher used. The quencher molecule quenches the fluorescence emitted by the fluorophore when excited by the cycler’s light source As long as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence signals.
+Amplification	MIQE		ampliconSize	83	The length of the amplicon in basepairs.
+Amplification	MIxS	MIxS	pcr_cond	"initial denaturation:94degC_5min	 denaturation:94degC_40s	 annealing:50degC_1min	 elongation:72degC_20s	 final elongation:72degC_2min	 total 25 and 30 cycles"	"Description of reaction conditions and components for PCR in the form of  'initial denaturation:94degC_1.5min	 annealing:...'."
+Amplification	MIxS	MIxS	nucl_acid_amp	 {PMID|DOI|URL} of written protocol of amplification and purification	Link to a literature reference, electronic resource or a standard operating procedure (SOP) of the amplification reactions.
+Amplification	dMIQE		amplificationInstrument	BIO-RAD Automated Droplet Generator, PCR machine, BIO-RAD QX200 Droplet Reader	Name of the ddPCR instrument used.
+Amplification	dMIQE		positivePartitions	6164	Mean copies per partition (?) can be calculated using positive partitions and the total partition number with a formula ?=?In(1?k/n) where k is postive partitions and n is the total number of partitions (accepted droplets).
+Amplification	dMIQE		partitionNumber	6165	The number of partitions (n), e.g. meaning accepted droplets in ddPCR or chambers in dPCR.
+Amplification	dMIQE		partitionVolume	1	An accurate estimation of partition volume. The sum of the partitions multiplied by the partition volume will enable the total volume of the reaction to be calculated.
+Amplification	dMIQE		partitionVolumeUnit	nl	Unit used for partition volume
+Amplification	dMIQE		estimatedNumberOfCopies	10300	Number of target molecules per µl. Mean copies per partition (?) can be calculated using  the number of partitions (n) and the estimated copy number in the total volume of all partitions (m) with a formula ?=m/n.
+Amplification	dMIQE		amplificationReactionVolume	22	PCR reaction volume
+Amplification	dMIQE		amplificationReactionVolumeUnit	µl	Unit used for PCR reaction volume. Many of the instruments require preparation of a much larger initial sample volume than is actually analyzed.
+Amplification	dMIQE		analysisProgram	BIO-RAD QuantaSoft	The program used to analyse the d(d)PCR runs.
+Amplification	dMIQE		experimentalVariance		Multiple biological replicates are encouraged to assess total experimental variation. When single dPCR experiments are performed, a minimal estimate of variance due to counting error alone must be calculated from the binomial (or suitable equivalent) distribution.
+Target	DwC	Taxon	kingdom	Metazoa	The full scientific name of the kingdom in which the taxon is classified.
+Target	DwC	Taxon	phylum	Chordata	The full scientific name of the phylum or division in which the taxon is classified.
+Target	DwC	Taxon	class	Actinopterygii	The full scientific name of the class in which the taxon is classified.
+Target	DwC	Taxon	order	Salmoniformes	The full scientific name of the order in which the taxon is classified.
+Target	DwC	Taxon	family	Salmonidae	The full scientific name of the family in which the taxon is classified.
+Target	DwC	Taxon	genus	Salmo	The full scientific name of the genus in which the taxon is classified.
+Target	DwC	Taxon	specificEpithet	salar	The name of the first or species epithet of the scientificName.
+Target	DwC	Taxon	scientificName	Salmo salar	The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term.
+Target	DwC	Taxon	taxonRank	species	The taxonomic rank of the most specific name in the scientificName.
+Occurrence	DwC	Occurrence	occurrenceStatus	absent	A statement about the presence or absence of a Taxon at a Location. Recommended best practice is to use a controlled vocabulary (present, absent).
